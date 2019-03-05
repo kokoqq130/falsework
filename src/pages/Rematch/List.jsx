@@ -26,14 +26,12 @@ class List extends View {
                         return <li key={item.id}>
                             <span className="listInfo">{item.text}</span>
                             <Button
-                                icon="delete"
                                 className="removeList"
                                 onClick={() => {
                                     remove(item.id);
                                 }}
                             >删除</Button>
                             <Button
-                                icon="delete"
                                 className="removeList"
                                 onClick={() => {
                                     asyncRemove(item.id);

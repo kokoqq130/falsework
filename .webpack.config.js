@@ -9,9 +9,9 @@ const theme = {
 };
 const outputPath = resolve('dist');
 const src = {
-    html: resolve( './demo/public/index.html'),
-    js: resolve('./demo/src/index.js'),
-    static: resolve('./demo/static'),
+    html: resolve( './public/index.html'),
+    js: resolve('./src/index.js'),
+    static: resolve('./static'),
 },
 dist = {
     static:  path.resolve(outputPath, 'static'),

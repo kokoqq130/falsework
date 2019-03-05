@@ -23,12 +23,12 @@ module.exports = {
         [
             'module-resolver',
             {
-                root: ['./demo/src'],
+                root: ['./src'],
                 alias: {
-                    component: './demo/src/component',
-                    core: './demo/src/core',
-                    util: './demo/src/util',
-                    config: './demo/config',
+                    component: './src/component',
+                    core: './src/core',
+                    util: './src/util',
+                    config: './config',
                 },
             },
         ],

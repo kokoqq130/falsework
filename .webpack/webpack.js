@@ -6,12 +6,12 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
-const pkg = require('../../package.json');
+const pkg = require('../package.json');
 const resolve = dir => path.resolve(process.cwd(), dir);
 let webpackConfig = {};
 
 try {
-    webpackConfig = require('../../.webpack.config.js');
+    webpackConfig = require('../.webpack.config.js');
 } catch (e) {
 }
 
@@ -109,7 +109,7 @@ packConfig.resolve = {
     // require时省略的扩展名，如：require('module') 不需要module.js
     extensions: webpackConfig.extensions || defaultConfig.extensions,
     alias: {
-        '@View': path.resolve('./demo/src/core/View.jsx'),
+        '@View': path.resolve('./src/core/View.jsx'),
     },
 };
 // 插件

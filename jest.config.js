@@ -22,7 +22,6 @@ module.exports = {
         '[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$',
     ],
     modulePathIgnorePatterns: [
-        '<rootDir>/demo/',
         '<rootDir>/node_modules/',
     ],
 };

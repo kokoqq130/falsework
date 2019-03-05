@@ -1,6 +1,6 @@
 .webpack.config.js
-demo/static/**/*.js
+static/**/*.js
 dist/**/*.js
-demo/.webpack/
+.webpack/
 lib/
 node_modules/

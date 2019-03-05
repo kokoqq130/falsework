@@ -1,8 +1,8 @@
 {
-  "name": "demo",
+  "name": "falsework",
   "version": "0.1.0",
   "private": true,
-  "description": "this is a components package",
+  "description": "this is a falsework",
   "license": "MIT",
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
@@ -39,8 +39,8 @@
     "recast": "^0.16.1"
   },
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack-dev-server --config ./demo/.webpack/webpack.js",
-    "build": "cross-env NODE_ENV=production webpack --config ./demo/.webpack/webpack.js",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --config ./.webpack/webpack.js",
+    "build": "cross-env NODE_ENV=production webpack --config ./.webpack/webpack.js",
     "test": "jest --config ./jest.config.js"
   },
   "babel": {},
