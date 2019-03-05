@@ -1,17 +1,30 @@
-export const count = {
-    state: 0, // initial state
+import Todos from '../service/Todos';
+
+console.info(Todos);
+
+export const todos = {
+    state: {
+        1516344826871: { text: 'do stuff', done: true },
+        1516344852231: { text: 'do other stuff', done: false },
+    },
     reducers: {
-        // handle state changes with pure functions
-        increment(state, payload) {
-            return state + payload;
+        add(state, text) {
+            return {
+                ...state,
+                [Date.now()]: { text, done: false },
+            };
+        },
+        remove(state, id) {
+            delete state[id];
+            return {
+                ...state,
+            };
         },
     },
     effects: {
-        // handle state changes with impure functions.
-        // use async/await for async actions
-        async incrementAsync(payload, rootState) {
-            await new Promise(resolve => setTimeout(resolve, 1000));
-            this.increment(payload);
+        async asyncRemove(id) {
+            await Todos.remove(1000);
+            this.remove(id);
         },
     },
 };

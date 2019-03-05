@@ -1,7 +1,8 @@
 import React from 'react';
 import View from '@View';
 import Search from './Search';
-import Table from './Table';
+import Deal from './Deal';
+import List from './List';
 
 
 class Index extends View {
@@ -9,7 +10,8 @@ class Index extends View {
         return (<div>
             <h1>主页</h1>
             <Search />
-            <Table />
+            <List />
+            <Deal />
         </div>);
     }
 }
