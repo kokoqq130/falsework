@@ -1,0 +1,75 @@
+{
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "legacyDecorators": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "extends": "airbnb",
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "plugins": [
+        "react"
+    ],
+    "settings": {
+        "import/resolver": {
+            "babel-module": {
+                "alias": {
+                    "components": "./src/components",
+                    "core": "./src/core",
+                    "util": "./src/util",
+                    "config": "./src/config",
+                    "common": "./src/common"
+                }
+            }
+        }
+    },
+    "rules": {
+        "indent": ["error", 4, { "SwitchCase": 1, "VariableDeclarator": { "var": 2, "let": 2, "const": 3 } }],
+        "quotes": ["error", "single", { "allowTemplateLiterals": true, "avoidEscape": true }],
+        "linebreak-style": "off",
+        "no-underscore-dangle": 0,
+        "arrow-body-style": ["error", "always"],
+        "max-len": ["error", { "code": 200, "ignoreTemplateLiterals": true, "ignoreRegExpLiterals": true, "ignoreUrls": true }],
+        "class-methods-use-this": "off",
+        "consistent-return": ["error", { "treatUndefinedAsUnspecified": false }],
+        "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+        "no-param-reassign": ["error", { "props": false }],
+        "no-continue": "off",
+        "no-script-url": "off",
+        "no-restricted-syntax": [
+            "error",
+            "ForOfStatement",
+            "LabeledStatement",
+            "WithStatement"
+        ],
+        "no-unused-expressions": ["error", { "allowTaggedTemplates": true }],
+        "prefer-promise-reject-errors": "off",
+        "import/prefer-default-export": "off",
+        "import/no-webpack-loader-syntax": "off",
+        "import/no-duplicates": "off",
+        "import/no-unresolved": "off",
+        "react/jsx-no-bind": "off",
+        "react/forbid-prop-types": ["error", { "forbid": [""] }],
+        "react/jsx-indent": ["error", 4],
+        "react/jsx-indent-props": [2, 4],
+        "react/react-in-jsx-scope": "off",
+        "react/prefer-stateless-function": [0, { "ignorePureComponents": true }],
+        "react/jsx-closing-tag-location": "off",
+        "react/destructuring-assignment": "off",
+        "react/no-array-index-key": 2,
+        "react/no-access-state-in-setstate": "off",
+        "react/no-this-in-sfc": "off",
+        "react/jsx-one-expression-per-line": "off",
+        "react/prop-types": "off",
+        "jsx-a11y/no-static-element-interactions": "off",
+        "jsx-a11y/no-noninteractive-element-interactions": "off",
+        "react/jsx-wrap-multilines": "off",
+        "jsx-a11y/anchor-is-valid": [0],
+        "jsx-a11y/click-events-have-key-events": [0],
+        "no-debugger": "off"
+    }
+}

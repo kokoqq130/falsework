@@ -1,0 +1,69 @@
+body {
+    min-height: 100vh;
+    font-family: "微软雅黑";
+}
+#app {
+    min-height: 100vh;
+}
+.pull-left {
+    float: left;
+    display: block;
+}
+.pull-right {
+    float: right;
+    display: block;
+}
+.clearfix::after {
+    overflow: auto;
+    zoom: 1;
+    clear: both;
+}
+
+.ant-menu-item .menu-link {
+    display: inline-block;
+}
+#components-layout-demo-custom-trigger .trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color .3s;
+}
+
+#components-layout-demo-custom-trigger .trigger:hover {
+    color: #1890ff;
+}
+
+#components-layout-demo-custom-trigger .logo {
+    height: 32px;
+    background: rgba(255,255,255,.2);
+    margin: 16px;
+}
+#components-layout-demo-custom-trigger .ant-menu-inline-collapsed {
+    width: 64px;
+}
+.anticon {
+    margin-left: 16px;
+    font-size: 16px;
+}
+.logo {
+    text-align: center;
+    height: 64px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.logo-name {
+    width: 64px;
+    color: #fff;
+    background: #ef8300;
+    line-height: 64px;
+}
+.logo-info {
+    color: #ef8300;
+    line-height: 62px;
+    height: 64px;
+    box-sizing: border-box;
+    width: calc(100% - 64px);
+    background: #fff;
+    border: 1px solid #ef8300;
+}

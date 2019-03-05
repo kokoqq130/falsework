@@ -1,0 +1,106 @@
+@import "~antd/lib/style/themes/default.less";
+@ease-in-out-circ: cubic-bezier(.78, .14, .15, .86);
+
+.slidermenu_logo {
+    height: 64px;
+    position: relative;
+    line-height: 64px;
+    padding-left: (@menu-collapsed-width - 32px) / 2;
+    transition: all .3s;
+    box-shadow: 0 2px 8px #F0F1F2;
+
+    // background: #002140;
+    overflow: hidden;
+
+    img {
+        display: inline-block;
+        vertical-align: middle;
+        height: 62px;
+    }
+    h1 {
+        color: #666;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 20px;
+        margin: 0 0 0 10px;
+        font-family: 'Myriad Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        font-weight: 600;
+    }
+}
+.slidermenu_title {
+    height: 32px;
+    position: relative;
+    line-height: 32px;
+    text-align: center;
+    h1 {
+        color: rgb(127, 125, 122);
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 16px;
+        font-family: 'Myriad Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        font-weight: 600;
+    }
+}
+.slidermenu_sider {
+    min-height: 98vh;
+
+    // box-shadow: 2px 0 6px rgba(0, 21, 41, .35);
+    z-index: 10;
+    position: relative;
+
+    .slidermenu_collapsed {
+        position: absolute;
+        transition: all .3s;
+        right: -24px;
+        top: 50vh;
+        width: 24px;
+        height: 50px;
+        z-index: 3;
+        margin-top: -25px;
+        &:hover {
+            .slidermenu_collapsed_bg {
+                left: 4px;
+                border-left: 19px solid #D9DEE4;
+            }
+            .slidermenu_collapsed_navbar {
+                left: 0;
+            }
+        }
+        .slidermenu_collapsed_inner {
+            top: -50%;
+            position: relative;
+            overflow: hidden;
+        }
+        .slidermenu_collapsed_bg {
+            width: 0;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-bottom: 9px solid transparent;
+            border-left: 15px solid #D9DEE4;
+            border-top: 9px solid transparent;
+            transition: all 0.1s ease, 0.1s ease;
+        }
+        .slidermenu_collapsed_navbar {
+            height: 50px;
+            position: relative;
+            left: -4px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.1s ease, 0.1s ease;
+            .slidermenu_collapsed_icon {
+                line-height: 50px;
+                vertical-align: text-top;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.ant-layout-sider-children {
+
+    .ant-menu {
+        border-right: none !important;
+    }
+}

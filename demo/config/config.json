@@ -1,0 +1,54 @@
+{
+    "projectName": "Back-Component UI",
+    "routeType": "browser",
+    "menuPosition": "left",
+    "openPaths": ["/", "/403", "/404", "/500"],
+    "userHabit": false,
+    "api": {
+        "protocol": "http",
+        "domain": "www.baidu.com/"
+    },
+    "query": {
+        "screen-xs": {
+            "maxWidth": 575
+        },
+        "screen-sm": {
+            "minWidth": 576,
+            "maxWidth": 767
+        },
+        "screen-md": {
+            "minWidth": 768,
+            "maxWidth": 991
+        },
+        "screen-lg": {
+            "minWidth": 992,
+            "maxWidth": 1199
+        },
+        "screen-xl": {
+            "minWidth": 1200
+        }
+    },
+    "menus": [{
+            "name": "测试页面",
+            "key": "test",
+            "path": "/test"
+        }, {
+            "name": "测试菜单栏",
+            "key": "components",
+            "children": [{
+                "name": "一级菜单栏",
+                "key": "common",
+                "type": "title",
+                "children": [{
+                    "name": "二级菜单栏",
+                    "key": "test2",
+                    "path": "/test2"
+                }]
+            }]
+        }, {
+            "name": "rematch",
+            "key": "rematch",
+            "path": "/rematch"
+        }
+    ]
+}
